@@ -1,11 +1,11 @@
 # Marvel-DP-Report
-# TASK 1: 3D PRINTING!
+## TASK 1: 3D PRINTING!
 
 I explored the working of a 3D printer and understood how models are prepared and printed. I learned what an STL file is and how it serves as the 3D model format for printing. Using slicing software (Bambu Studio and Creality slicer), I experimented with different settings such as bed temperature, layer height, and infill density to prepare the file for printing. I also went through the SOPs for operating the printer safely. Finally, I downloaded an STL file from the internet, sliced it.
 <img width="1920" height="1200" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/6ddbe3d0-9cbc-40fe-a542-1a17835d653d" />
 
 
-# TASK 2: API
+## TASK 2: API
 
 I learned about APIs, how they work, and their applications in different domains. I understood how APIs enable communication between applications and allow us to fetch or send data in real-time. To practice, I built a **cryptocurrency converter** web app using a cryptocurrency API. The interface allows the user to select a cryptocurrency, convert it into fiat currency, and display the live conversion rate. Through this task, I gained hands-on experience in making API calls, handling the response, and integrating it into a user-friendly interface.
 <img width="1920" height="1200" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/39fdaa73-74cd-4261-9155-66745033a878" />
@@ -76,6 +76,39 @@ I learned about the different soldering tools available in the lab, including so
 I designed a **555 timer astable multivibrator circuit** with a duty cycle of 60%. I rigged up the circuit on a breadboard and used probes to observe the output waveform on a DSO (Digital Storage Oscilloscope). This task helped me understand how the 555 timer operates in astable mode and how component values affect frequency and duty cycle.
 ![IMG20250904133359](https://github.com/user-attachments/assets/f5a65953-5cf6-42d2-b597-c1bd95f4b222)
 ![IMG20250904134001](https://github.com/user-attachments/assets/9badc7cb-24f6-428e-ba3d-e2e005c14e24)
+
+## TASK 14: Karnaugh Maps and Deriving the logic circuit
+
+I analysed a two-input burglar-alarm problem (inputs: Door — open/closed, and Key — pressed/not pressed), built the truth table for the four cases, created a Karnaugh map, derived the minimized Boolean expression, and implemented the logic using simple gates.
+
+Inputs (binary):
+D = 1 → Door open
+D = 0 → Door closed
+K = 1 → Key pressed (authorized)
+K = 0 → Key not pressed
+
+| D (Door) | K (Key) | Alarm (A) | Explanation |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | door closed, no key → no alarm |
+| 0 | 1 | 0 | door closed, key present → no alarm |
+| 1 | 0 | 1 | door open, no key → ALARM (unauthorised) |
+| 1 | 1 | 0 | door open, key present → owner opened, no alarm |
+
+**K-Map for the above table**
+
+<img width="369" height="374" alt="image" src="https://github.com/user-attachments/assets/e369b209-8205-45c0-b219-ed12c2feb7a1" />
+
+
+**Boolean expression**
+
+<img width="226" height="109" alt="image" src="https://github.com/user-attachments/assets/70cd5afa-ea46-418e-82b4-ed0e93a60bb2" />
+
+**Logic Circuit**
+
+<img width="573" height="148" alt="image" src="https://github.com/user-attachments/assets/01263e91-e187-46f1-b2df-034560d2061b" />
+
+
+
 
 
 
